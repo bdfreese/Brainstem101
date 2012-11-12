@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2840" systemVersion="12C60" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1926"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="4">
+            <objects>
+                <viewController id="2" customClass="BSViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5">
+                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dH8-ur-Khu">
+                                <subviews>
+                                    <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m6c-Va-uIy">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="WgA-uT-l4f"/>
+                                            <constraint firstAttribute="width" constant="55" id="zmv-BM-dsE"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" image="RotateImage.png" backgroundImage="RotateImage.png">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" image="RotateImage.png" backgroundImage="RotateImage.png">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" image="RotateImage.png" backgroundImage="RotateImage.png">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="rotateSections:" destination="2" eventType="touchUpInside" id="vLw-WH-esM"/>
+                                        </connections>
+                                    </button>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="435" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="grouped" rowHeight="25" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="hxH-AZ-bDj">
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" priority="1" constant="640" type="user" id="LlR-C0-RjT"/>
+                                            <constraint firstAttribute="width" constant="228" id="Ndb-Le-rwI"/>
+                                        </constraints>
+                                        <color key="separatorColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="2" id="amT-MF-LNw"/>
+                                            <outlet property="delegate" destination="2" id="Aur-A5-XnO"/>
+                                        </connections>
+                                    </tableView>
+                                    <view opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="149" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="717" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="SBG-w0-wuH" customClass="BSDetailView">
+                                        <subviews>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Structure Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Aev-5b-1Ps">
+                                                <color key="backgroundColor" name="secondarySelectedControlColor" catalog="System" colorSpace="catalog"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="VjZ-HT-O4q"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bhj-3F-pQO">
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="Bhj-3F-pQO" firstAttribute="leading" secondItem="SBG-w0-wuH" secondAttribute="leading" type="default" id="3OC-ht-oUU"/>
+                                            <constraint firstItem="Bhj-3F-pQO" firstAttribute="trailing" secondItem="SBG-w0-wuH" secondAttribute="trailing" type="default" id="H1c-n9-sOI"/>
+                                            <constraint firstItem="Aev-5b-1Ps" firstAttribute="trailing" secondItem="SBG-w0-wuH" secondAttribute="trailing" type="default" id="OmV-Ax-NNC"/>
+                                            <constraint firstItem="Bhj-3F-pQO" firstAttribute="bottom" secondItem="SBG-w0-wuH" secondAttribute="bottom" type="default" id="Whv-7w-DDF"/>
+                                            <constraint firstItem="Aev-5b-1Ps" firstAttribute="leading" secondItem="SBG-w0-wuH" secondAttribute="leading" type="default" id="qUF-Ts-AWG"/>
+                                            <constraint firstItem="Bhj-3F-pQO" firstAttribute="top" secondItem="SBG-w0-wuH" secondAttribute="top" constant="20" symbolic="YES" type="default" id="tCm-iW-QIm"/>
+                                            <constraint firstItem="Aev-5b-1Ps" firstAttribute="top" secondItem="SBG-w0-wuH" secondAttribute="top" type="default" id="xdM-Uw-B61"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="description" destination="Bhj-3F-pQO" id="xbC-ni-cvt"/>
+                                            <outlet property="titleLabel" destination="Aev-5b-1Ps" id="B4V-Oy-x1h"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="hxH-AZ-bDj" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="CTv-Te-2Rt"/>
+                                    <constraint firstItem="hxH-AZ-bDj" firstAttribute="leading" secondItem="m6c-Va-uIy" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="MbQ-sI-3w4"/>
+                                    <constraint firstItem="hxH-AZ-bDj" firstAttribute="top" secondItem="dH8-ur-Khu" secondAttribute="top" constant="20" symbolic="YES" type="default" id="Xtf-UZ-6EZ"/>
+                                    <constraint firstItem="SBG-w0-wuH" firstAttribute="top" secondItem="hxH-AZ-bDj" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="aiY-Kf-1sX"/>
+                                    <constraint firstItem="SBG-w0-wuH" firstAttribute="leading" secondItem="hxH-AZ-bDj" secondAttribute="leading" type="default" id="bcK-f5-oDx"/>
+                                    <constraint firstAttribute="trailing" secondItem="SBG-w0-wuH" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="hlj-oB-hEW"/>
+                                    <constraint firstAttribute="bottom" secondItem="SBG-w0-wuH" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="oBi-Qe-bEI"/>
+                                    <constraint firstItem="m6c-Va-uIy" firstAttribute="top" secondItem="dH8-ur-Khu" secondAttribute="top" constant="20" symbolic="YES" type="default" id="q9E-lg-CYj"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dH8-ur-Khu" firstAttribute="bottom" secondItem="5" secondAttribute="bottom" type="default" id="Skw-HM-kze"/>
+                            <constraint firstItem="dH8-ur-Khu" firstAttribute="leading" secondItem="5" secondAttribute="leading" type="default" id="Tof-2F-1ag"/>
+                            <constraint firstItem="dH8-ur-Khu" firstAttribute="top" secondItem="5" secondAttribute="top" type="default" id="b6W-De-tsE"/>
+                            <constraint firstItem="dH8-ur-Khu" firstAttribute="trailing" secondItem="5" secondAttribute="trailing" type="default" id="xZ1-fY-AKc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="detailView" destination="SBG-w0-wuH" id="OVc-9l-l5M"/>
+                        <outlet property="indexTable" destination="hxH-AZ-bDj" id="13H-Yy-dl0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="RotateImage.png" width="132" height="91"/>
+    </resources>
+    <classes>
+        <class className="BSDetailView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BSDetailView.h"/>
+            <relationships>
+                <relationship kind="outlet" name="description" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="BSStemView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BSStemView.h"/>
+        </class>
+        <class className="BSViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BSViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="rotateSections:"/>
+                <relationship kind="outlet" name="detailView" candidateClass="BSDetailView"/>
+                <relationship kind="outlet" name="indexTable" candidateClass="UITableView"/>
+                <relationship kind="outlet" name="stemView" candidateClass="BSStemView"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
