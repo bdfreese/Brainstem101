@@ -15,7 +15,6 @@ BOOL isBeingTouched = NO;
 BOOL doneLoadingImages = NO;
 
 
-
 @implementation BSStemView{
     UIImageView *imageView;
     NSMutableArray *imageArray;
@@ -33,7 +32,6 @@ BOOL doneLoadingImages = NO;
         imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"frame-000000.jpg"]];
         imageView.frame = self.bounds;
         [imageView setContentMode:UIViewContentModeScaleAspectFit];
-
         
         [self addSubview:imageView];
         imageArray = [[NSMutableArray alloc] init];
@@ -52,15 +50,10 @@ BOOL doneLoadingImages = NO;
                 }
             }
             doneLoadingImages = YES;
-            NSLog(@"Done Loading images");
         };
         
-        
         dispatch_queue_t queue1 = dispatch_queue_create("arrayLoaderQueue",DISPATCH_QUEUE_CONCURRENT);
-        
         dispatch_async(queue1, loadArray);
-        
-        
     }
     
     return self;
@@ -70,11 +63,9 @@ BOOL doneLoadingImages = NO;
 
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
-    
     [super touchesBegan:touches withEvent:event];
-        isBeingTouched = YES;
-        lastX = [[touches anyObject] locationInView:self].x;
-
+    isBeingTouched = YES;
+    lastX = [[touches anyObject] locationInView:self].x;
 }
 
 

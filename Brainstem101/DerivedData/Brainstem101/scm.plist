@@ -3,12 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>FoundWorkingCopyPaths</key>
-	<array/>
+	<array>
+		<string>/Users/Cam/Git/Brainstem101</string>
+	</array>
 	<key>LastWorkingCopyScanDate</key>
-	<date>2012-11-11T23:54:27Z</date>
+	<date>2012-11-13T11:33:07Z</date>
 	<key>MissingFilePaths</key>
 	<array/>
 	<key>Version</key>
-	<integer>3</integer>
+	<integer>4</integer>
 </dict>
 </plist>

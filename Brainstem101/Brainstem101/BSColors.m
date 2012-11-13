@@ -1,14 +1,11 @@
-//
-//  BSColors.m
-//  BLAH
-//
-//  Created by Samantha Dove on 10/13/12.
-//  Copyright (c) 2012 Samantha Dove. All rights reserved.
-//
+    //
+    //  BSColors.m
+    //
+    //  Created by Samantha Dove on 10/13/12.
+    //  Copyright (c) 2012 Samantha Dove. All rights reserved.
+    //
 
 #import "BSColors.h"
-#define ALPHA .76
-#define DIVISOR 255
 
 @implementation BSColors
 
@@ -63,142 +60,137 @@
 @synthesize rosybrown;
 @synthesize firebrick4;
 
-
-
-
 - (id)init
 {
     self = [super init];
     if (self) {
         colorArray = [[NSMutableArray alloc] init];
         
-        crimson = [UIColor colorWithRed:220.0/DIVISOR green:20.0/DIVISOR/DIVISOR blue:60.0/DIVISOR/DIVISOR alpha:ALPHA];
+        crimson = [UIColor colorWithRed:220.0/PATH_COLOR_DIVISOR green:20.0/PATH_COLOR_DIVISOR blue:60.0/PATH_COLOR_DIVISOR alpha:PATH_COLOR_ALPHA];
         [colorArray addObject:crimson];
         
-        pink =  [UIColor colorWithRed:255.0/DIVISOR green:192.0/DIVISOR blue:203.0/DIVISOR alpha:ALPHA];
+        pink =  [UIColor colorWithRed:255.0/PATH_COLOR_DIVISOR green:192.0/PATH_COLOR_DIVISOR blue:203.0/PATH_COLOR_DIVISOR alpha:PATH_COLOR_ALPHA];
         [colorArray addObject:pink];
         
-        palevioletred = [UIColor colorWithRed:219.0/DIVISOR green:112.0/DIVISOR blue:147.0/DIVISOR alpha:ALPHA];
+        palevioletred = [UIColor colorWithRed:219.0/PATH_COLOR_DIVISOR green:112.0/PATH_COLOR_DIVISOR blue:147.0/PATH_COLOR_DIVISOR alpha:PATH_COLOR_ALPHA];
         [colorArray addObject:palevioletred];
         
-        violetred1 = [UIColor colorWithRed:255.0/DIVISOR green:62.0/DIVISOR blue:150.0/DIVISOR alpha:ALPHA];
+        violetred1 = [UIColor colorWithRed:255.0/PATH_COLOR_DIVISOR green:62.0/PATH_COLOR_DIVISOR blue:150.0/PATH_COLOR_DIVISOR alpha:PATH_COLOR_ALPHA];
         [colorArray addObject:violetred1];
         
-        hotpink = [UIColor colorWithRed:255.0/DIVISOR green:105.0/DIVISOR blue:180.0/DIVISOR alpha:ALPHA];
+        hotpink = [UIColor colorWithRed:255.0/PATH_COLOR_DIVISOR green:105.0/PATH_COLOR_DIVISOR blue:180.0/PATH_COLOR_DIVISOR alpha:PATH_COLOR_ALPHA];
         [colorArray addObject:hotpink];
         
-        deeppink = [UIColor colorWithRed:255.0/DIVISOR green:20.0/DIVISOR blue:147.0/DIVISOR alpha:ALPHA];
+        deeppink = [UIColor colorWithRed:255.0/PATH_COLOR_DIVISOR green:20.0/PATH_COLOR_DIVISOR blue:147.0/PATH_COLOR_DIVISOR alpha:PATH_COLOR_ALPHA];
         [colorArray addObject:deeppink];
         
-        maroon1 = [UIColor colorWithRed:255.0/DIVISOR green:52.0/DIVISOR blue:179.0/DIVISOR alpha:ALPHA];
+        maroon1 = [UIColor colorWithRed:255.0/PATH_COLOR_DIVISOR green:52.0/PATH_COLOR_DIVISOR blue:179.0/PATH_COLOR_DIVISOR alpha:PATH_COLOR_ALPHA];
         [colorArray addObject:maroon1];
         
-        orchid2 = [UIColor colorWithRed:238.0/DIVISOR green:122.0/DIVISOR blue:233.0/DIVISOR alpha:ALPHA];
+        orchid2 = [UIColor colorWithRed:238.0/PATH_COLOR_DIVISOR green:122.0/PATH_COLOR_DIVISOR blue:233.0/PATH_COLOR_DIVISOR alpha:PATH_COLOR_ALPHA];
         [colorArray addObject:orchid2];
         
-        plum = [UIColor colorWithRed:221.0/DIVISOR green:160.0/DIVISOR blue:221.0/DIVISOR alpha:ALPHA];
+        plum = [UIColor colorWithRed:221.0/PATH_COLOR_DIVISOR green:160.0/PATH_COLOR_DIVISOR blue:221.0/PATH_COLOR_DIVISOR alpha:PATH_COLOR_ALPHA];
         [colorArray addObject:plum];
         
-        magenta2 = [UIColor colorWithRed:238.0/DIVISOR green:0.0/DIVISOR blue:238.0/DIVISOR alpha:ALPHA];
+        magenta2 = [UIColor colorWithRed:238.0/PATH_COLOR_DIVISOR green:0.0/PATH_COLOR_DIVISOR blue:238.0/PATH_COLOR_DIVISOR alpha:PATH_COLOR_ALPHA];
         [colorArray addObject:magenta2];
         
-        mediumorchid = [UIColor colorWithRed:186.0/DIVISOR green:85.0/DIVISOR blue:211.0/DIVISOR alpha:ALPHA];
+        mediumorchid = [UIColor colorWithRed:186.0/PATH_COLOR_DIVISOR green:85.0/PATH_COLOR_DIVISOR blue:211.0/PATH_COLOR_DIVISOR alpha:PATH_COLOR_ALPHA];
         [colorArray addObject:mediumorchid];
         
-        darkviolet = [UIColor colorWithRed:148.0/DIVISOR green:0.0/DIVISOR blue:211.0/DIVISOR alpha:ALPHA];
+        darkviolet = [UIColor colorWithRed:148.0/PATH_COLOR_DIVISOR green:0.0/PATH_COLOR_DIVISOR blue:211.0/PATH_COLOR_DIVISOR alpha:PATH_COLOR_ALPHA];
         [colorArray addObject:darkviolet];
         
-        purple1 = [UIColor colorWithRed:155.0/DIVISOR green:48.0/DIVISOR blue:255.0/DIVISOR alpha:ALPHA];
+        purple1 = [UIColor colorWithRed:155.0/PATH_COLOR_DIVISOR green:48.0/PATH_COLOR_DIVISOR blue:255.0/PATH_COLOR_DIVISOR alpha:PATH_COLOR_ALPHA];
         [colorArray addObject:purple1];
         
-        lightslateblue = [UIColor colorWithRed:132.0/DIVISOR green:112.0/DIVISOR blue:255.0/DIVISOR alpha:ALPHA];
+        lightslateblue = [UIColor colorWithRed:132.0/PATH_COLOR_DIVISOR green:112.0/PATH_COLOR_DIVISOR blue:255.0/PATH_COLOR_DIVISOR alpha:PATH_COLOR_ALPHA];
         [colorArray addObject:lightslateblue];
         
-        slateblue = [UIColor colorWithRed:106.0/DIVISOR green:90.0/DIVISOR blue:205.0/DIVISOR alpha:ALPHA];
+        slateblue = [UIColor colorWithRed:106.0/PATH_COLOR_DIVISOR green:90.0/PATH_COLOR_DIVISOR blue:205.0/PATH_COLOR_DIVISOR alpha:PATH_COLOR_ALPHA];
         [colorArray addObject:slateblue];
         
-        blue = [UIColor colorWithRed:0.0/DIVISOR green:0.0/DIVISOR blue:255.0/DIVISOR alpha:ALPHA];
+        blue = [UIColor colorWithRed:0.0/PATH_COLOR_DIVISOR green:0.0/PATH_COLOR_DIVISOR blue:255.0/PATH_COLOR_DIVISOR alpha:PATH_COLOR_ALPHA];
         [colorArray addObject:blue];
         
-        cobalt = [UIColor colorWithRed:61.0/DIVISOR green:89.0/DIVISOR blue:171.0/DIVISOR alpha:ALPHA];
+        cobalt = [UIColor colorWithRed:61.0/PATH_COLOR_DIVISOR green:89.0/PATH_COLOR_DIVISOR blue:171.0/PATH_COLOR_DIVISOR alpha:PATH_COLOR_ALPHA];
         [colorArray addObject:cobalt];
         
-        royalblue1 = [UIColor colorWithRed:72.0/DIVISOR green:118.0/DIVISOR blue:255.0/DIVISOR alpha:ALPHA];
+        royalblue1 = [UIColor colorWithRed:72.0/PATH_COLOR_DIVISOR green:118.0/PATH_COLOR_DIVISOR blue:255.0/PATH_COLOR_DIVISOR alpha:PATH_COLOR_ALPHA];
         [colorArray addObject:royalblue1];
         
-        cornflowerblue = [UIColor colorWithRed:100.0/DIVISOR green:149.0/DIVISOR blue:237.0/DIVISOR alpha:ALPHA];
+        cornflowerblue = [UIColor colorWithRed:100.0/PATH_COLOR_DIVISOR green:149.0/PATH_COLOR_DIVISOR blue:237.0/PATH_COLOR_DIVISOR alpha:PATH_COLOR_ALPHA];
         [colorArray addObject:cornflowerblue];
         
-        dodgerblue1 = [UIColor colorWithRed:30.0/DIVISOR green:144.0/DIVISOR blue:255.0/DIVISOR alpha:ALPHA];
+        dodgerblue1 = [UIColor colorWithRed:30.0/PATH_COLOR_DIVISOR green:144.0/PATH_COLOR_DIVISOR blue:255.0/PATH_COLOR_DIVISOR alpha:PATH_COLOR_ALPHA];
         [colorArray addObject:dodgerblue1];
         
-        steelblue1 = [UIColor colorWithRed:99.0/DIVISOR green:184.0/DIVISOR blue:255.0/DIVISOR alpha:ALPHA];
+        steelblue1 = [UIColor colorWithRed:99.0/PATH_COLOR_DIVISOR green:184.0/PATH_COLOR_DIVISOR blue:255.0/PATH_COLOR_DIVISOR alpha:PATH_COLOR_ALPHA];
         [colorArray addObject:steelblue1];
         
-        deepskyblue1 = [UIColor colorWithRed:0.0/DIVISOR green:191.0/DIVISOR blue:255.0/DIVISOR alpha:ALPHA];
+        deepskyblue1 = [UIColor colorWithRed:0.0/PATH_COLOR_DIVISOR green:191.0/PATH_COLOR_DIVISOR blue:255.0/PATH_COLOR_DIVISOR alpha:PATH_COLOR_ALPHA];
         [colorArray addObject:deepskyblue1];
         
-        peacock = [UIColor colorWithRed:51.0/DIVISOR green:161.0/DIVISOR blue:201.0/DIVISOR alpha:ALPHA];
+        peacock = [UIColor colorWithRed:51.0/PATH_COLOR_DIVISOR green:161.0/PATH_COLOR_DIVISOR blue:201.0/PATH_COLOR_DIVISOR alpha:PATH_COLOR_ALPHA];
         [colorArray addObject:peacock];
         
-        turquoise2 = [UIColor colorWithRed:0.0/DIVISOR green:229.0/DIVISOR blue:238.0/DIVISOR alpha:ALPHA];
+        turquoise2 = [UIColor colorWithRed:0.0/PATH_COLOR_DIVISOR green:229.0/PATH_COLOR_DIVISOR blue:238.0/PATH_COLOR_DIVISOR alpha:PATH_COLOR_ALPHA];
         [colorArray addObject:turquoise2];
         
-        turquoise4 = [UIColor colorWithRed:0.0/DIVISOR green:134.0/DIVISOR blue:139/DIVISOR alpha:ALPHA];
+        turquoise4 = [UIColor colorWithRed:0.0/PATH_COLOR_DIVISOR green:134.0/PATH_COLOR_DIVISOR blue:139/PATH_COLOR_DIVISOR alpha:PATH_COLOR_ALPHA];
         [colorArray addObject:turquoise4];
         
-        teal = [UIColor colorWithRed:0.0/DIVISOR green:128.0/DIVISOR blue:128.0/DIVISOR alpha:ALPHA];
+        teal = [UIColor colorWithRed:0.0/PATH_COLOR_DIVISOR green:128.0/PATH_COLOR_DIVISOR blue:128.0/PATH_COLOR_DIVISOR alpha:PATH_COLOR_ALPHA];
         [colorArray addObject:teal];
         
-        manganeseblue = [UIColor colorWithRed:3.0/DIVISOR green:168.0/DIVISOR blue:158.0/DIVISOR alpha:ALPHA];
+        manganeseblue = [UIColor colorWithRed:3.0/PATH_COLOR_DIVISOR green:168.0/PATH_COLOR_DIVISOR blue:158.0/PATH_COLOR_DIVISOR alpha:PATH_COLOR_ALPHA];
         [colorArray addObject:manganeseblue];
         
-        aquamarine3 = [UIColor colorWithRed:102.0/DIVISOR green:205.0/DIVISOR blue:170.0/DIVISOR alpha:ALPHA];
+        aquamarine3 = [UIColor colorWithRed:102.0/PATH_COLOR_DIVISOR green:205.0/PATH_COLOR_DIVISOR blue:170.0/PATH_COLOR_DIVISOR alpha:PATH_COLOR_ALPHA];
         [colorArray addObject:aquamarine3];
         
-        emeraldgreen = [UIColor colorWithRed:0.0/DIVISOR green:201.0/DIVISOR blue:87.0/DIVISOR alpha:ALPHA];
+        emeraldgreen = [UIColor colorWithRed:0.0/PATH_COLOR_DIVISOR green:201.0/PATH_COLOR_DIVISOR blue:87.0/PATH_COLOR_DIVISOR alpha:PATH_COLOR_ALPHA];
         [colorArray addObject:emeraldgreen];
         
-        forestgreen = [UIColor colorWithRed:34.0/DIVISOR green:139.0/DIVISOR blue:34.0/DIVISOR alpha:ALPHA];
+        forestgreen = [UIColor colorWithRed:34.0/PATH_COLOR_DIVISOR green:139.0/PATH_COLOR_DIVISOR blue:34.0/PATH_COLOR_DIVISOR alpha:PATH_COLOR_ALPHA];
         [colorArray addObject:forestgreen];
         
-        green3 = [UIColor colorWithRed:0.0/DIVISOR green:205.0/DIVISOR blue:0.0/DIVISOR alpha:ALPHA];
+        green3 = [UIColor colorWithRed:0.0/PATH_COLOR_DIVISOR green:205.0/PATH_COLOR_DIVISOR blue:0.0/PATH_COLOR_DIVISOR alpha:PATH_COLOR_ALPHA];
         [colorArray addObject:green3];
         
-        olivedrab = [UIColor colorWithRed:107.0/DIVISOR green:142.0/DIVISOR blue:35.0/DIVISOR alpha:ALPHA];
+        olivedrab = [UIColor colorWithRed:107.0/PATH_COLOR_DIVISOR green:142.0/PATH_COLOR_DIVISOR blue:35.0/PATH_COLOR_DIVISOR alpha:PATH_COLOR_ALPHA];
         [colorArray addObject:olivedrab];
         
-        yellow3 = [UIColor colorWithRed:205.0/DIVISOR green:205.0/DIVISOR blue:0.0/DIVISOR alpha:ALPHA];
+        yellow3 = [UIColor colorWithRed:205.0/PATH_COLOR_DIVISOR green:205.0/PATH_COLOR_DIVISOR blue:0.0/PATH_COLOR_DIVISOR alpha:PATH_COLOR_ALPHA];
         [colorArray addObject:yellow3];
         
-        khaki3 = [UIColor colorWithRed:205.0/DIVISOR green:198.0/DIVISOR blue:115.0/DIVISOR alpha:ALPHA];
+        khaki3 = [UIColor colorWithRed:205.0/PATH_COLOR_DIVISOR green:198.0/PATH_COLOR_DIVISOR blue:115.0/PATH_COLOR_DIVISOR alpha:PATH_COLOR_ALPHA];
         [colorArray addObject:khaki3];
         
-        gold2 = [UIColor colorWithRed:238.0/DIVISOR green:201.0/DIVISOR blue:0.0/DIVISOR alpha:ALPHA];
+        gold2 = [UIColor colorWithRed:238.0/PATH_COLOR_DIVISOR green:201.0/PATH_COLOR_DIVISOR blue:0.0/PATH_COLOR_DIVISOR alpha:PATH_COLOR_ALPHA];
         [colorArray addObject:gold2];
         
-        orange2 = [UIColor colorWithRed:238.0/DIVISOR green:154.0/DIVISOR blue:0.0/DIVISOR alpha:ALPHA];
+        orange2 = [UIColor colorWithRed:238.0/PATH_COLOR_DIVISOR green:154.0/PATH_COLOR_DIVISOR blue:0.0/PATH_COLOR_DIVISOR alpha:PATH_COLOR_ALPHA];
         [colorArray addObject:orange2];
         
-        cadiumyellow = [UIColor colorWithRed:255.0/DIVISOR green:153.0/DIVISOR blue:18.0/DIVISOR alpha:ALPHA];
+        cadiumyellow = [UIColor colorWithRed:255.0/PATH_COLOR_DIVISOR green:153.0/PATH_COLOR_DIVISOR blue:18.0/PATH_COLOR_DIVISOR alpha:PATH_COLOR_ALPHA];
         [colorArray addObject:cadiumyellow];
         
-        cadiumorange = [UIColor colorWithRed:255.0/DIVISOR green:97.0/DIVISOR blue:3.0/DIVISOR alpha:ALPHA];
+        cadiumorange = [UIColor colorWithRed:255.0/PATH_COLOR_DIVISOR green:97.0/PATH_COLOR_DIVISOR blue:3.0/PATH_COLOR_DIVISOR alpha:PATH_COLOR_ALPHA];
         [colorArray addObject:cadiumorange];
         
-        coral1 = [UIColor colorWithRed:255.0/DIVISOR green:114.0/DIVISOR blue:86.0/DIVISOR alpha:ALPHA];
+        coral1 = [UIColor colorWithRed:255.0/PATH_COLOR_DIVISOR green:114.0/PATH_COLOR_DIVISOR blue:86.0/PATH_COLOR_DIVISOR alpha:PATH_COLOR_ALPHA];
         [colorArray addObject:coral1];
         
-        salmon = [UIColor colorWithRed:250.0/DIVISOR green:128.0/DIVISOR blue:114.0/DIVISOR alpha:ALPHA];
+        salmon = [UIColor colorWithRed:250.0/PATH_COLOR_DIVISOR green:128.0/PATH_COLOR_DIVISOR blue:114.0/PATH_COLOR_DIVISOR alpha:PATH_COLOR_ALPHA];
         [colorArray addObject:salmon];
         
-        rosybrown = [UIColor colorWithRed:188.0/DIVISOR green:143.0/DIVISOR blue:143.0/DIVISOR alpha:ALPHA];
+        rosybrown = [UIColor colorWithRed:188.0/PATH_COLOR_DIVISOR green:143.0/PATH_COLOR_DIVISOR blue:143.0/PATH_COLOR_DIVISOR alpha:PATH_COLOR_ALPHA];
         [colorArray addObject:rosybrown];
         
-        firebrick4 = [UIColor colorWithRed:139.0/DIVISOR green:26.0/DIVISOR blue:26.0/DIVISOR alpha:ALPHA];
+        firebrick4 = [UIColor colorWithRed:139.0/PATH_COLOR_DIVISOR green:26.0/PATH_COLOR_DIVISOR blue:26.0/PATH_COLOR_DIVISOR alpha:PATH_COLOR_ALPHA];
         [colorArray addObject:firebrick4];
-        
-        NSLog(@"%d", colorArray.count);
         
     }
     return self;

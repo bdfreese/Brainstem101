@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		111250F21622607800644DD6 /* BSSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 111250F11622607800644DD6 /* BSSectionModel.m */; };
+		111250F21622607800644DD6 /* BSStructureGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 111250F11622607800644DD6 /* BSStructureGenerator.m */; };
 		11A9932B162170610016CE48 /* BSStructurePath.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A9932A162170610016CE48 /* BSStructurePath.m */; };
 		11A9932E16218E540016CE48 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A9932D16218E540016CE48 /* MediaPlayer.framework */; };
 		25D18ABD1622CAA600417FBC /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25D18ABC1622CAA600417FBC /* CoreImage.framework */; };
@@ -18,7 +18,7 @@
 		32035533162C0CC60079394F /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32035532162C0CC60079394F /* MainStoryboard.storyboard */; };
 		3203553A162C100B0079394F /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 32035539162C100B0079394F /* Default-Portrait@2x~ipad.png */; };
 		3203553C162C10100079394F /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 3203553B162C10100079394F /* Default-Landscape@2x~ipad.png */; };
-		3260AFDC162A393300B8CD02 /* BSDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3260AFDB162A393300B8CD02 /* BSDetailView.m */; };
+		32E4D2911651AACB0051AE2D /* BSModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E4D2901651AACB0051AE2D /* BSModel.m */; };
 		32E778F516326B220077D0B4 /* frame-000000.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32E776A016326B210077D0B4 /* frame-000000.jpg */; };
 		32E778F616326B220077D0B4 /* frame-000001.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32E776A116326B210077D0B4 /* frame-000001.jpg */; };
 		32E778F716326B220077D0B4 /* frame-000002.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32E776A216326B210077D0B4 /* frame-000002.jpg */; };
@@ -641,8 +641,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		111250F01622607800644DD6 /* BSSectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSSectionModel.h; sourceTree = "<group>"; };
-		111250F11622607800644DD6 /* BSSectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSSectionModel.m; sourceTree = "<group>"; };
+		111250F01622607800644DD6 /* BSStructureGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSStructureGenerator.h; sourceTree = "<group>"; };
+		111250F11622607800644DD6 /* BSStructureGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSStructureGenerator.m; sourceTree = "<group>"; };
 		11A99329162170610016CE48 /* BSStructurePath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSStructurePath.h; sourceTree = "<group>"; };
 		11A9932A162170610016CE48 /* BSStructurePath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSStructurePath.m; sourceTree = "<group>"; };
 		11A9932D16218E540016CE48 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
@@ -656,8 +656,6 @@
 		32035532162C0CC60079394F /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		32035539162C100B0079394F /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
 		3203553B162C10100079394F /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
-		3260AFDA162A393300B8CD02 /* BSDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSDetailView.h; sourceTree = "<group>"; };
-		3260AFDB162A393300B8CD02 /* BSDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSDetailView.m; sourceTree = "<group>"; };
 		3277C7D0162A079A00E29858 /* Abducens Nucleus4.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Abducens Nucleus4.xml"; sourceTree = "<group>"; };
 		3277C7D1162A079A00E29858 /* Accessory Nucleus1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Accessory Nucleus1.xml"; sourceTree = "<group>"; };
 		3277C7D2162A079A00E29858 /* ALS1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = ALS1.xml; sourceTree = "<group>"; };
@@ -821,6 +819,9 @@
 		32BDE5BC162A22C900786A91 /* Ventral Trigeminothalamic Tract7.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Ventral Trigeminothalamic Tract7.xml"; path = "Brainstem101/PathXML/Ventral Trigeminothalamic Tract7.xml"; sourceTree = "<group>"; };
 		32BDE5BD162A22C900786A91 /* Ventral Trigeminothalamic Tract8.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Ventral Trigeminothalamic Tract8.xml"; path = "Brainstem101/PathXML/Ventral Trigeminothalamic Tract8.xml"; sourceTree = "<group>"; };
 		32BDE5BE162A22C900786A91 /* Ventral Trigeminothalamic Tract9.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Ventral Trigeminothalamic Tract9.xml"; path = "Brainstem101/PathXML/Ventral Trigeminothalamic Tract9.xml"; sourceTree = "<group>"; };
+		32DD437F16524FD3002AAE0F /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = ../Constants.h; sourceTree = "<group>"; };
+		32E4D28F1651AACB0051AE2D /* BSModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSModel.h; sourceTree = "<group>"; };
+		32E4D2901651AACB0051AE2D /* BSModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSModel.m; sourceTree = "<group>"; };
 		32E776A016326B210077D0B4 /* frame-000000.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "frame-000000.jpg"; sourceTree = "<group>"; };
 		32E776A116326B210077D0B4 /* frame-000001.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "frame-000001.jpg"; sourceTree = "<group>"; };
 		32E776A216326B210077D0B4 /* frame-000002.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "frame-000002.jpg"; sourceTree = "<group>"; };
@@ -1519,13 +1520,14 @@
 			children = (
 				3203553B162C10100079394F /* Default-Landscape@2x~ipad.png */,
 				32035539162C100B0079394F /* Default-Portrait@2x~ipad.png */,
-				8179EB1C161D41BB0050D663 /* SXN IMAGES */,
 				8122FC98161D9DDD00D72F02 /* mainBrainStemObject.png */,
 				3203537B162C0C690079394F /* BrainstemLogo.png */,
 				32035457162C0C690079394F /* RotateImage.png */,
+				8179EB1C161D41BB0050D663 /* SXN IMAGES */,
 				32E7769E16326B040077D0B4 /* Stem Images */,
 			);
 			name = Images;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		3277C839162A07C500E29858 /* XML #2 */ = {
@@ -1759,6 +1761,32 @@
 			);
 			name = "XML #3";
 			path = ../..;
+			sourceTree = "<group>";
+		};
+		32DD438016525569002AAE0F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3203537C162C0C690079394F /* BSSectionView.h */,
+				3203537D162C0C690079394F /* BSSectionView.m */,
+				32E77B4A16326B3A0077D0B4 /* BSStemView.h */,
+				32E77B4B16326B3A0077D0B4 /* BSStemView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		32DD438116526771002AAE0F /* Data Objects */ = {
+			isa = PBXGroup;
+			children = (
+				111250F01622607800644DD6 /* BSStructureGenerator.h */,
+				111250F11622607800644DD6 /* BSStructureGenerator.m */,
+				8179EB07161D41A50050D663 /* BSStructure.h */,
+				8179EB08161D41A50050D663 /* BSStructure.m */,
+				11A99329162170610016CE48 /* BSStructurePath.h */,
+				11A9932A162170610016CE48 /* BSStructurePath.m */,
+				32035374162BF0810079394F /* BSColors.h */,
+				32035375162BF0810079394F /* BSColors.m */,
+			);
+			name = "Data Objects";
 			sourceTree = "<group>";
 		};
 		32E7769E16326B040077D0B4 /* Stem Images */ = {
@@ -2368,7 +2396,6 @@
 		8179EAD0161D40CF0050D663 = {
 			isa = PBXGroup;
 			children = (
-				32035531162C0C8E0079394F /* Images */,
 				8179EAE5161D40CF0050D663 /* Brainstem101 */,
 				8179EADE161D40CF0050D663 /* Frameworks */,
 				8179EADC161D40CF0050D663 /* Products */,
@@ -2404,20 +2431,12 @@
 				8179EAEF161D40CF0050D663 /* BSAppDelegate.m */,
 				8179EAFA161D40CF0050D663 /* BSViewController.h */,
 				8179EAFB161D40CF0050D663 /* BSViewController.m */,
-				3203537C162C0C690079394F /* BSSectionView.h */,
-				3203537D162C0C690079394F /* BSSectionView.m */,
-				111250F01622607800644DD6 /* BSSectionModel.h */,
-				111250F11622607800644DD6 /* BSSectionModel.m */,
-				8179EB07161D41A50050D663 /* BSStructure.h */,
-				8179EB08161D41A50050D663 /* BSStructure.m */,
-				11A99329162170610016CE48 /* BSStructurePath.h */,
-				11A9932A162170610016CE48 /* BSStructurePath.m */,
-				3260AFDA162A393300B8CD02 /* BSDetailView.h */,
-				3260AFDB162A393300B8CD02 /* BSDetailView.m */,
-				32035374162BF0810079394F /* BSColors.h */,
-				32035375162BF0810079394F /* BSColors.m */,
-				32E77B4A16326B3A0077D0B4 /* BSStemView.h */,
-				32E77B4B16326B3A0077D0B4 /* BSStemView.m */,
+				32E4D28F1651AACB0051AE2D /* BSModel.h */,
+				32E4D2901651AACB0051AE2D /* BSModel.m */,
+				32DD437F16524FD3002AAE0F /* Constants.h */,
+				32DD438016525569002AAE0F /* Views */,
+				32DD438116526771002AAE0F /* Data Objects */,
+				32035531162C0C8E0079394F /* Images */,
 				81FC0C72161D6A7C001D808F /* PathXML */,
 				8179EAE6161D40CF0050D663 /* Supporting Files */,
 			);
@@ -3146,11 +3165,11 @@
 				8179EAFC161D40CF0050D663 /* BSViewController.m in Sources */,
 				8179EB09161D41A50050D663 /* BSStructure.m in Sources */,
 				11A9932B162170610016CE48 /* BSStructurePath.m in Sources */,
-				111250F21622607800644DD6 /* BSSectionModel.m in Sources */,
-				3260AFDC162A393300B8CD02 /* BSDetailView.m in Sources */,
+				111250F21622607800644DD6 /* BSStructureGenerator.m in Sources */,
 				32035376162BF0810079394F /* BSColors.m in Sources */,
 				32035459162C0C690079394F /* BSSectionView.m in Sources */,
 				32E77B4C16326B3A0077D0B4 /* BSStemView.m in Sources */,
+				32E4D2911651AACB0051AE2D /* BSModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

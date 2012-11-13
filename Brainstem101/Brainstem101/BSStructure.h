@@ -1,10 +1,10 @@
-//
-//  BSStructure.h
-//  Brainstem101
-//
-//  Created by Samantha Dove on 10/3/12.
-//  Copyright (c) 2012 Brainstem101. All rights reserved.
-//
+    //
+    //  BSStructure.h
+    //  Brainstem101
+    //
+    //  Created by Cameron Ehrlich on 10/3/12.
+    //  Copyright (c) 2012 Brainstem101. All rights reserved.
+    //
 
 #import <Foundation/Foundation.h>
 

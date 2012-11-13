@@ -12,10 +12,11 @@
 #import <CoreImage/CoreImage.h>
 
 
-@implementation BSSectionView{
-    float currentFromRotate;
-    float currentToRotatate;
-}
+float currentFromRotate;
+float currentToRotatate;
+
+@implementation BSSectionView
+
 @synthesize backgroundLayer;
 @synthesize pathLayer;
 @synthesize sxnNumber;

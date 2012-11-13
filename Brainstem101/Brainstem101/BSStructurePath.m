@@ -1,10 +1,10 @@
-//
-//  BSStructurePath.m
-//  Brainstem101
-//
-//  Created by Brian Freese on 10/7/12.
-//  Copyright (c) 2012 Brainstem101. All rights reserved.
-//
+    //
+    //  BSStructurePath.m
+    //  Brainstem101
+    //
+    //  Created by Brian Freese on 10/7/12.
+    //  Copyright (c) 2012 Brainstem101. All rights reserved.
+    //
 
 #import "BSStructurePath.h"
 

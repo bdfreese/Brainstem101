@@ -1,15 +1,17 @@
-//
-//  BSStructure.m
-//  Brainstem101
-//
-//  Created by Samantha Dove on 10/3/12.
-//  Copyright (c) 2012 Brainstem101. All rights reserved.
-//
+    //
+    //  BSStructure.m
+    //  Brainstem101
+    //
+    //  Created by Cameron Ehrlich on 10/3/12.
+    //  Copyright (c) 2012 Brainstem101. All rights reserved.
+    //
 
 #import "BSStructure.h"
 #import "BSStructurePath.h"
 
 #define CAPTUREDEVICESCALEFACTOR .78
+#define PATHTHICKNESS 10
+
 
 @implementation BSStructure {
     NSXMLParser *parser;
@@ -78,7 +80,7 @@
   namespaceURI:(NSString *)namespaceURI
  qualifiedName:(NSString *)qualifiedName
     attributes:(NSDictionary *)attributeDict {
-
+    
     if ([elementName isEqualToString:@"section"]) {
         isParsingSection = YES;
     }
@@ -117,16 +119,16 @@
 
 -(void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName{
     if ([elementName isEqualToString:@"structure"]) {
-        //reached the end
+            //reached the end
         BSStructurePath *newStructurePath = [[BSStructurePath alloc] init];
         [newStructurePath setPathColor:sectionColor];
         [newStructurePath setFillColor:[tmpFillColor copy]];
-        [newStructurePath setPathThickness:[NSNumber numberWithFloat:15.0]];
+        [newStructurePath setPathThickness:[NSNumber numberWithFloat:PATHTHICKNESS]];
         [newStructurePath setPath:[currentPaths copy]];
         [paths replaceObjectAtIndex:currentSectionNumber withObject:newStructurePath];
-        //clean up
+            //clean up
     }
-
+    
     if ([elementName isEqualToString:@"section"]) {
         currentSectionNumber = [constructionString intValue]-1;
         [constructionString setString:@""];

@@ -1,10 +1,10 @@
-//
-//  BSSectionView.h
-//  Brainstem101
-//
-//  Created by Samantha Dove on 10/3/12.
-//  Copyright (c) 2012 Brainstem101. All rights reserved.
-//
+    //
+    //  BSSectionView.h
+    //  Brainstem101
+    //
+    //  Created by Cameron Ehrlich on 10/3/12.
+    //  Copyright (c) 2012 Brainstem101. All rights reserved.
+    //
 
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
@@ -17,12 +17,12 @@
 @property (nonatomic, retain) NSNumber *currentImageScale;
 
 
-- (id) initWithFrame:(CGRect)frame andSectionNumber:(int) num andScale:(float)imageScale;
-- (void) drawPaths:(NSMutableArray *)inputPaths;
+- (id)   initWithFrame:(CGRect)frame andSectionNumber:(int) num andScale:(float)imageScale;
 
+- (void) drawPaths:(NSMutableArray *)inputPaths;
 - (void) fade;
 - (void) unfade;
 - (void) clearPaths;
-- (void)rotateView;
+- (void) rotateView;
 
 @end
