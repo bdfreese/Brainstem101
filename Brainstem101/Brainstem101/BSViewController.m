@@ -1,10 +1,10 @@
-//
-//  BSViewController.m
-//  Brainstem101
-//
-//  Created by Cameron Ehrlich on 10/3/12.
-//  Copyright (c) 2012 Brainstem101. All rights reserved.
-//
+    //
+    //  BSViewController.m
+    //  Brainstem101
+    //
+    //  Created by Cameron Ehrlich on 10/3/12.
+    //  Copyright (c) 2012 Brainstem101. All rights reserved.
+    //
 
 #import <QuartzCore/QuartzCore.h>
 #import "BSViewController.h"
@@ -26,7 +26,7 @@ static int numOfN;
     
     CGRect defaultFrame;
     
-    //section view center points
+        //section view center points
     CGPoint sxn0PortraitCenterPoint;
     CGPoint sxn0LandscapeCenterPoint;
     CGPoint sxn0currentPoint;
@@ -82,21 +82,21 @@ static int numOfN;
     [super viewDidLoad];
     
     selectedSxnView = -1;
-
+    
     allStructures = [[[BSModel sharedModel] structuresObject] allStructures] ;
     numOfN = [[[BSModel sharedModel] structuresObject] numberOfNuclei];
     numOfT = [[[BSModel sharedModel] structuresObject] numberOfTracts];
     numOfP = [[[BSModel sharedModel] structuresObject] numberOfPerfusions];
-
-    //end getting structure Data
-
+    
+        //end getting structure Data
+    
     [indexTable.layer setCornerRadius:DEFAULT_CORNER_RADIUS];
     
-    //define frames and locations for sxnViews
+        //define frames and locations for sxnViews
     defaultFrame = CGRectMake(0, 0, CAPTURE_DEVICE_WIDTH*PORTRAIT_SXN_VIEW_SCALE_FACTOR , CAPTURE_DEVICE_HEIGHT*PORTRAIT_SXN_VIEW_SCALE_FACTOR );
     
     
-    // begin defining center points for sxn views
+        // begin defining center points for sxn views
     sxn0PortraitCenterPoint = CGPointMake(95, 929);
     sxn1PortraitCenterPoint = CGPointMake(255,884.625);
     sxn2PortraitCenterPoint = CGPointMake(380,777.25);
@@ -106,9 +106,9 @@ static int numOfN;
     sxn6PortraitCenterPoint = CGPointMake(380,228.75 );
     sxn7PortraitCenterPoint = CGPointMake(255,137.375);
     sxn8PortraitCenterPoint = CGPointMake(95, 95);
-
     
-    //Landscape
+    
+        //Landscape
     sxn8LandscapeCenterPoint = CGPointMake(150,170);
     sxn7LandscapeCenterPoint = CGPointMake(420,170);
     sxn6LandscapeCenterPoint = CGPointMake(670,170);
@@ -146,7 +146,7 @@ static int numOfN;
     sxnView0 = [[BSSectionView alloc] initWithFrame:defaultFrame andSectionNumber:0 andScale:PORTRAIT_SXN_VIEW_SCALE_FACTOR];
     [sxnView0 setCenter:sxn0currentPoint];
     
-    // put all section views into an allSectionView array
+        // put all section views into an allSectionView array
     allSectionViews = [[NSMutableArray alloc] initWithObjects:sxnView0,sxnView1,sxnView2,sxnView3,sxnView4,sxnView5,sxnView6,sxnView7,sxnView8, nil];
     
     
@@ -157,17 +157,17 @@ static int numOfN;
     
     [self.view addSubview:stemView];
     
-    // add all the views
+        // add all the views
     for (BSSectionView *v in allSectionViews) {
         [self.view addSubview:v];
     }
     
-    //check for launch orientation
+        //check for launch orientation
     if (UIDeviceOrientationIsPortrait(self.interfaceOrientation)) {
         [self setCenterPoints:UIDeviceOrientationPortrait];
     }else{
         [self setCenterPoints:UIDeviceOrientationLandscapeLeft];
-
+        
     }
 }
 
@@ -177,7 +177,7 @@ static int numOfN;
     int arrayIndex = indexPath.row;
     
     if (indexPath.section == NUCLEUS - 1) {
-        //do nothing
+            //do nothing
     }else if (indexPath.section == TRACT - 1){
         arrayIndex += numOfN;
     }else if (indexPath.section == PERFUSION - 1) {
@@ -234,10 +234,10 @@ static int numOfN;
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     selectedSxnView = -1;
     [self removeAllColorCodes];
-
+    
     int arrayIndex = indexPath.row;
     if (indexPath.section == NUCLEUS-1) {
-        //do nothing
+            //do nothing
     }else if (indexPath.section == TRACT -1){
         arrayIndex += numOfN;
     }else if (indexPath.section == PERFUSION -1) {
@@ -270,12 +270,12 @@ static int numOfN;
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
     
     CGPoint point = [[touches anyObject] locationInView:self.view];
-
+    
     if (CGRectContainsPoint(sxnView0.frame, point)) {
         [self selectSectionView:sxnView0];
         [self colorCodeSectionNumer:0];
         selectedSxnView = 0;
-
+        
     }else if (CGRectContainsPoint(sxnView1.frame, point)){
         [self selectSectionView:sxnView1];
         [self colorCodeSectionNumer:1];
@@ -317,7 +317,7 @@ static int numOfN;
         selectedSxnView = 8;
         
     }else{
-        //tap detected outside of any object
+            //tap detected outside of any object
         selectedSxnView = -1;
         for (int i = 0; i < [allSectionViews count]; i++) {
             [[allSectionViews objectAtIndex:i] unfade];
@@ -421,7 +421,7 @@ static int numOfN;
             for(BSSectionView *s in allSectionViews){
                 s.transform = CGAffineTransformMakeScale(1.5,1.5);
             }
-
+            
             sxnView0.center = sxn0LandscapeCenterPoint;
             sxnView1.center = sxn1LandscapeCenterPoint;
             sxnView2.center = sxn2LandscapeCenterPoint;
@@ -431,7 +431,7 @@ static int numOfN;
             sxnView6.center = sxn6LandscapeCenterPoint;
             sxnView7.center = sxn7LandscapeCenterPoint;
             sxnView8.center = sxn8LandscapeCenterPoint;
-            stemView.layer.opacity = 0;            
+            stemView.layer.opacity = 0;
             
         } completion:nil];
     }

@@ -91,8 +91,7 @@
     [nn3 addXMLFilePath:@"ALS8" withFillColor:nil];
     [nn3 addXMLFilePath:@"ALS9" withFillColor:nil];
     [allStructures addObject:nn3]; //CONFUSED
-    
-    
+
     
     BSStructure *n1 = [[BSStructure alloc] initWithName:@"Cuneate Nucleus" andType:NUCLEUS andColor:[self getColor]];
     [n1 addXMLFilePath:@"Cuneate Nucleus1" withFillColor:nil];
