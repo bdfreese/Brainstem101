@@ -7,9 +7,11 @@
 		<string>/Users/Cam/Git/Brainstem101</string>
 	</array>
 	<key>LastWorkingCopyScanDate</key>
-	<date>2012-11-14T01:22:32Z</date>
+	<date>2012-12-06T02:05:58Z</date>
 	<key>MissingFilePaths</key>
-	<array/>
+	<array>
+		<string>/Users/Cam/Git/Brainstem101/Brainstem101/Brainstem101/Model.xcdatamodeld/Model.xcdatamodel</string>
+	</array>
 	<key>Version</key>
 	<integer>4</integer>
 </dict>

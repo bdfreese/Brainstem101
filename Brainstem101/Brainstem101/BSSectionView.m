@@ -1,10 +1,10 @@
-//
-//  BSSectionView.m
-//  Brainstem101
-//
-//  Created by Samantha Dove on 10/3/12.
-//  Copyright (c) 2012 Brainstem101. All rights reserved.
-//
+    //
+    //  BSSectionView.m
+    //  Brainstem101
+    //
+    //  Created by Cameron Ehrlich on 10/3/12.
+    //  Copyright (c) 2012 Brainstem101. All rights reserved.
+    //
 
 #import "BSSectionView.h"
 #import "BSStructurePath.h"
@@ -42,7 +42,7 @@ float currentToRotatate;
 
 - (void) drawPaths:(NSMutableArray *)inputPaths{
     
-    // replace these with image dimensions somehow
+        // replace these with image dimensions somehow
     UIGraphicsBeginImageContext(CGSizeMake(1314, 868));
     CGContextRef currentContext = UIGraphicsGetCurrentContext();
     CGContextScaleCTM(currentContext, 1, 1);
@@ -50,7 +50,7 @@ float currentToRotatate;
     
     for (int i = 0; i < inputPaths.count; i++) {
         BSStructurePath *currPath = [inputPaths objectAtIndex:i];
-
+        
         [[currPath pathColor] setStroke];
         [[currPath fillColor] setFill];
         CGContextSetLineWidth(currentContext, [[currPath pathThickness] floatValue]);
@@ -79,15 +79,15 @@ float currentToRotatate;
 }
 
 - (void)rotateView{
-
+    
     [UIView animateWithDuration:0.5 delay:0 options: UIViewAnimationCurveEaseOut animations:
      ^{
          
          CGAffineTransform blah = CGAffineTransformMakeRotation(M_PI/1);
          CGAffineTransform blerg = CGAffineTransformMakeScale(self.transform.a, self.transform.d);
          self.transform = CGAffineTransformConcat(blah, blerg);
-        
-    } completion:^(BOOL finished){ NSLog(@"Done!"); }];
+         
+     } completion:^(BOOL finished){ NSLog(@"Done!"); }];
     
 }
 

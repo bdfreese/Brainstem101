@@ -24,8 +24,6 @@ static int numOfN;
     
     int selectedSxnView;
     
-    CGRect defaultFrame;
-    
         //section view center points
     CGPoint sxn0PortraitCenterPoint;
     CGPoint sxn0LandscapeCenterPoint;
@@ -81,20 +79,18 @@ static int numOfN;
 {
     [super viewDidLoad];
     
-    selectedSxnView = -1;
-    
+        //get info from shared data model
     allStructures = [[[BSModel sharedModel] structuresObject] allStructures] ;
     numOfN = [[[BSModel sharedModel] structuresObject] numberOfNuclei];
     numOfT = [[[BSModel sharedModel] structuresObject] numberOfTracts];
     numOfP = [[[BSModel sharedModel] structuresObject] numberOfPerfusions];
     
-        //end getting structure Data
-    
+    selectedSxnView = -1;
     [indexTable.layer setCornerRadius:DEFAULT_CORNER_RADIUS];
     
         //define frames and locations for sxnViews
-    defaultFrame = CGRectMake(0, 0, CAPTURE_DEVICE_WIDTH*PORTRAIT_SXN_VIEW_SCALE_FACTOR , CAPTURE_DEVICE_HEIGHT*PORTRAIT_SXN_VIEW_SCALE_FACTOR );
     
+    CGRect defaultFrame = CGRectMake(0, 0, CAPTURE_DEVICE_WIDTH*PORTRAIT_SXN_VIEW_SCALE_FACTOR , CAPTURE_DEVICE_HEIGHT*PORTRAIT_SXN_VIEW_SCALE_FACTOR );
     
         // begin defining center points for sxn views
     sxn0PortraitCenterPoint = CGPointMake(95, 929);
@@ -106,7 +102,6 @@ static int numOfN;
     sxn6PortraitCenterPoint = CGPointMake(380,228.75 );
     sxn7PortraitCenterPoint = CGPointMake(255,137.375);
     sxn8PortraitCenterPoint = CGPointMake(95, 95);
-    
     
         //Landscape
     sxn8LandscapeCenterPoint = CGPointMake(150,170);
@@ -149,6 +144,11 @@ static int numOfN;
         // put all section views into an allSectionView array
     allSectionViews = [[NSMutableArray alloc] initWithObjects:sxnView0,sxnView1,sxnView2,sxnView3,sxnView4,sxnView5,sxnView6,sxnView7,sxnView8, nil];
     
+        // add all the views
+    for (BSSectionView *v in allSectionViews) {
+        [self.view addSubview:v];
+    }
+    
     
     float stemScale = .70;
     
@@ -156,11 +156,7 @@ static int numOfN;
         //[stemView setCenter:CGPointMake(150, 512)];
     
     [self.view addSubview:stemView];
-    
-        // add all the views
-    for (BSSectionView *v in allSectionViews) {
-        [self.view addSubview:v];
-    }
+
     
         //check for launch orientation
     if (UIDeviceOrientationIsPortrait(self.interfaceOrientation)) {
@@ -445,8 +441,7 @@ static int numOfN;
     return YES;
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     NSLog(@"Received Memory Warning!!!!!!!!");
 }

@@ -19,7 +19,7 @@
 {
     self = [super init];
     if (self) {
-        pathThickness = [NSNumber numberWithFloat:15.0];
+        pathThickness = [NSNumber numberWithFloat:PATH_THICKNESS];
         pathData = [[UIBezierPath alloc] init];
         pathColor = [UIColor yellowColor];
         fillColor = [UIColor clearColor];
