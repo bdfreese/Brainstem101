@@ -18,6 +18,8 @@
 		32035533162C0CC60079394F /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32035532162C0CC60079394F /* MainStoryboard.storyboard */; };
 		3203553A162C100B0079394F /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 32035539162C100B0079394F /* Default-Portrait@2x~ipad.png */; };
 		3203553C162C10100079394F /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 3203553B162C10100079394F /* Default-Landscape@2x~ipad.png */; };
+		328CC6A516717B8900B166CA /* BSSyndrome.m in Sources */ = {isa = PBXBuildFile; fileRef = 328CC6A216717B8900B166CA /* BSSyndrome.m */; };
+		328CC6A616717B8900B166CA /* BSSyndromeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 328CC6A416717B8900B166CA /* BSSyndromeGenerator.m */; };
 		32E4D2911651AACB0051AE2D /* BSModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E4D2901651AACB0051AE2D /* BSModel.m */; };
 		32E778F516326B220077D0B4 /* frame-000000.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32E776A016326B210077D0B4 /* frame-000000.jpg */; };
 		32E778F616326B220077D0B4 /* frame-000001.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32E776A116326B210077D0B4 /* frame-000001.jpg */; };
@@ -708,6 +710,10 @@
 		3277C801162A079A00E29858 /* Tectospinal Tract3.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Tectospinal Tract3.xml"; sourceTree = "<group>"; };
 		3277C802162A079A00E29858 /* Tectospinal Tract4.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Tectospinal Tract4.xml"; sourceTree = "<group>"; };
 		3277C803162A079A00E29858 /* Ventral Trigeminothalamic Tract4.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Ventral Trigeminothalamic Tract4.xml"; sourceTree = "<group>"; };
+		328CC6A116717B8900B166CA /* BSSyndrome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSSyndrome.h; sourceTree = "<group>"; };
+		328CC6A216717B8900B166CA /* BSSyndrome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSSyndrome.m; sourceTree = "<group>"; };
+		328CC6A316717B8900B166CA /* BSSyndromeGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSSyndromeGenerator.h; sourceTree = "<group>"; };
+		328CC6A416717B8900B166CA /* BSSyndromeGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSSyndromeGenerator.m; sourceTree = "<group>"; };
 		32BDE550162A22C900786A91 /* Abducens Nerve5.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Abducens Nerve5.xml"; path = "Brainstem101/PathXML/Abducens Nerve5.xml"; sourceTree = "<group>"; };
 		32BDE551162A22C900786A91 /* Abducens Nucleus5.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Abducens Nucleus5.xml"; path = "Brainstem101/PathXML/Abducens Nucleus5.xml"; sourceTree = "<group>"; };
 		32BDE552162A22C900786A91 /* ALS5.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = ALS5.xml; path = Brainstem101/PathXML/ALS5.xml; sourceTree = "<group>"; };
@@ -1785,6 +1791,10 @@
 				11A9932A162170610016CE48 /* BSStructurePath.m */,
 				32035374162BF0810079394F /* BSColors.h */,
 				32035375162BF0810079394F /* BSColors.m */,
+				328CC6A116717B8900B166CA /* BSSyndrome.h */,
+				328CC6A216717B8900B166CA /* BSSyndrome.m */,
+				328CC6A316717B8900B166CA /* BSSyndromeGenerator.h */,
+				328CC6A416717B8900B166CA /* BSSyndromeGenerator.m */,
 			);
 			name = "Data Objects";
 			sourceTree = "<group>";
@@ -3170,6 +3180,8 @@
 				32035459162C0C690079394F /* BSSectionView.m in Sources */,
 				32E77B4C16326B3A0077D0B4 /* BSStemView.m in Sources */,
 				32E4D2911651AACB0051AE2D /* BSModel.m in Sources */,
+				328CC6A516717B8900B166CA /* BSSyndrome.m in Sources */,
+				328CC6A616717B8900B166CA /* BSSyndromeGenerator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
