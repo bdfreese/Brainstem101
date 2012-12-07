@@ -11,7 +11,9 @@
 
 @interface BSModel : NSObject
 
-@property (strong, nonatomic) BSStructureGenerator *structuresObject;
+@property (nonatomic, strong) NSMutableArray *Nuclei;
+@property (nonatomic, strong) NSMutableArray *Tracts;
+
 
 + (id)sharedModel;
 

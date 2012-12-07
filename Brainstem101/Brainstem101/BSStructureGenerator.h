@@ -10,9 +10,7 @@
 
 @interface BSStructureGenerator : NSObject
 
-@property (nonatomic, retain) NSMutableArray *allStructures;
-@property (assign) int numberOfNuclei;
-@property (assign) int numberOfTracts;
-@property (assign) int numberOfPerfusions;
+@property (nonatomic, strong) NSMutableArray *Nuclei;
+@property (nonatomic, strong) NSMutableArray *Tracts;
 
 @end

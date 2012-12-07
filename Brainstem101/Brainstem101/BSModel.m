@@ -11,9 +11,13 @@
 
 static BSModel *modelSingleton = nil;
 
-@implementation BSModel
+@implementation BSModel{
+    BSStructureGenerator *structuresObject;
+}
 
-@synthesize structuresObject;
+@synthesize Nuclei;
+@synthesize Tracts;
+
 
 + (id)sharedModel {
     static dispatch_once_t onceToken;
@@ -26,6 +30,9 @@ static BSModel *modelSingleton = nil;
 - (id)init {
     if (self = [super init]) {
         structuresObject = [[BSStructureGenerator alloc] init];
+        Nuclei = [[structuresObject Nuclei] copy];
+        Tracts = [[structuresObject Tracts] copy];
+        
             //set this bitch up
     }
     return self;
